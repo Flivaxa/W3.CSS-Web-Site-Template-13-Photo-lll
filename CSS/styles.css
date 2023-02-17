@@ -1,0 +1,196 @@
+/* Start Global Rules */
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', arial, sans-serif;
+}
+/* End Global Rules */
+ 
+/* Start Header */
+header  {
+    background-image: url(../images/header.jpg);
+    background-size: cover;
+    padding-top: 41%;
+    position: relative;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+header .heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    border: 1px solid white;
+    padding: 25px;
+}
+header .heading h1 {
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: 0.2ch;
+    margin: 0;
+}
+header .heading h2 {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: 0.2ch;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+@media (max-width: 991px) {
+    header .heading h1 {
+        font-size: 1.25rem;
+    }
+    header .heading h2 {
+        display: none;
+    }
+}
+/* End Header */
+
+/* Start Nav */
+nav {
+    width: fit-content;
+    margin: 0 auto;
+    transform: translateY(-50%);
+    margin-bottom: 15px;
+}
+@media (max-width: 599px) {
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #eeeeee;
+        padding: 15px;
+        transform: translateX(0);
+    }
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    font-size: 1rem;
+    background-color: #eeeeee;
+    color: #000000;
+    padding: 10px 20px;
+    transition: 0.25s;
+}
+nav ul li a:hover {
+    background-color: #cccccc;
+}
+nav ul li:first-child a {
+    border-radius: 5px 0 0 5px;
+}
+nav ul li:last-child a {
+    border-radius: 0 5px 5px 0;
+}
+/* End Nav */
+
+/* Start Portfolio */
+.portfolio {
+    /* padding-top: 10px; */
+}
+/* @media (max-width: 599px) {
+    .portfolio {
+        padding-top: 100px;
+    }
+} */
+.portfolio img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+/* End Portfolio */
+
+/* Start Contact */
+.contact {
+    padding-bottom: 15px;
+}
+.contact .holder {
+    background-color: #eeeeee;
+    padding: 20px;
+}
+.contact .holder h2 {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+.contact .holder p {
+    line-height: 1.7;
+    font-size: 1.05rem;
+}
+.contact .holder form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+.contact .holder form input:not(:last-child), 
+.contact .holder form textarea {
+    border: 1px solid #cccccc;
+    padding: 10px;
+    width: 100%;
+    font-size: 1.2rem;
+}
+.contact .holder form textarea {
+    resize: none;
+    height: 88px;
+}
+.contact .holder form input:not(:last-child):focus, 
+.contact .holder form textarea:focus {
+    outline: none;
+    border-color: #93BFCF;
+}
+.contact .holder form input[type="submit"] {
+    display: block;
+    width: 100%;
+    border: none;
+    background: #616161;
+    color: #ffffff;
+    padding: 12px;
+    margin-top: 10px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: 0.25s;
+}
+.contact .holder form input[type="submit"]:hover {
+    background-color: #cccccc;
+    color: black;
+}
+.contact .holder .copyright {
+    padding: 40px 0 30px;
+    font-size: 1.1rem;
+}
+.contact .holder .copyright a {
+    color: unset;
+}
+.contact .holder .copyright a:hover {
+    color: limegreen;
+}
+/* End Contact */
